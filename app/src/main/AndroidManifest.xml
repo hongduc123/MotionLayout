@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.motionlayout">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MotionLayout">
+        <activity android:name=".KTPM14ATT_Activity"></activity>
+        <activity android:name=".MultiTransitionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ExampleMotionActivity" />
+        <activity android:name=".KeyCircleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".KeySAttributeActivity2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".KeyAtrributeActivity" />
+        <activity android:name=".KeyPositionActivity" />
+        <activity android:name=".OnClickOnSwipeMainActivity" />
+        <activity android:name=".ExampleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Exercise_01_Activity" />
+        <activity android:name=".CollapseHeaderActivity" />
+        <activity android:name=".MultiConstraintSet" />
+        <activity android:name=".ConstraintSetActivity" />
+        <activity android:name=".PathAnimationActivity" />
+        <activity android:name=".ChangeBackGroundColor" />
+        <activity android:name=".ImageActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

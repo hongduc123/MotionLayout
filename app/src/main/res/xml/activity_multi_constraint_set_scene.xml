@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/initial" >
+        <Constraint
+            android:layout_height="80dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="92dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="267dp"
+            android:id="@+id/view5" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/empty" >
+        <Constraint
+            android:layout_height="80dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="336dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:id="@+id/view5"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintHorizontal_bias="0.0">
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="#ff00ff" />
+        </Constraint>
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/initial"
+        motion:constraintSetEnd="@+id/empty"
+        motion:autoTransition="animateToEnd"
+        motion:duration="1000" />
+    <ConstraintSet
+        android:id="@+id/first_haft"
+        motion:deriveConstraintsFrom="@+id/empty" >
+        <Constraint
+            android:layout_marginEnd="16dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="632dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="1.0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:id="@+id/view5" >
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="#00ff00" />
+        </Constraint>
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/empty"
+        motion:constraintSetEnd="@+id/first_haft"
+        motion:autoTransition="animateToEnd" />
+
+</MotionScene>
